@@ -1,0 +1,60 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* white */
+    --foreground: 240 10% 3.9%; /* dark gray */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 240 10% 3.9%; /* dark gray */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 240 10% 3.9%; /* dark gray */
+    --primary: 8 100% 58%; /* your orange */
+    --primary-foreground: 355.7 100% 97.3%; /* very light (near white), for contrast on primary */
+    --secondary: 12 100% 95%; /* very light orange/peach */
+    --secondary-foreground: 240 5.9% 10%; /* dark gray, for contrast on secondary */
+    --muted: 240 4.8% 95.9%; /* light gray */
+    --muted-foreground: 240 3.8% 46.1%; /* medium gray */
+    --accent: 240 4.8% 95.9%; /* light gray */
+    --accent-foreground: 240 5.9% 10%; /* dark gray */
+    --destructive: 0 84.2% 60.2%; /* red */
+    --destructive-foreground: 0 0% 98%; /* very light (near white) */
+    --border: 240 5.9% 90%; /* light gray border */
+    --input: 240 5.9% 90%; /* light gray input background/border */
+    --ring: 8 100% 58%; /* your orange, for focus rings */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%; /* near black */
+    --foreground: 0 0% 98%; /* near white */
+    --card: 0 0% 3.9%; /* near black */
+    --card-foreground: 0 0% 98%; /* near white */
+    --popover: 0 0% 3.9%; /* near black */
+    --popover-foreground: 0 0% 98%; /* near white */
+    --primary: 8 100% 58%; /* your orange - kept consistent with light theme for branding */
+    --primary-foreground: 240 10% 3.9%; /* dark gray, for contrast on primary in dark mode */
+    --secondary: 0 0% 14.9%; /* dark gray */
+    --secondary-foreground: 0 0% 98%; /* near white */
+    --muted: 0 0% 14.9%; /* dark gray */
+    --muted-foreground: 0 0% 63.9%; /* lighter gray */
+    --accent: 0 0% 14.9%; /* dark gray */
+    --accent-foreground: 0 0% 98%; /* near white */
+    --destructive: 0 72.2% 50.6%; /* slightly adjusted red for dark mode contrast */
+    --destructive-foreground: 0 0% 98%; /* near white */
+    --border: 0 0% 14.9%; /* dark gray border */
+    --input: 0 0% 14.9%; /* dark gray input background/border */
+    --ring: 8 100% 65%; /* slightly lighter orange for focus rings in dark mode for visibility */
+    /* --radius remains the same */
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1; /* Default for Inter font from shadcn/ui */
+  }
+}
+
