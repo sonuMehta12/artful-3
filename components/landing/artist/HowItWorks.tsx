@@ -161,6 +161,7 @@ export const HowItWorksForArtistsSection = () => {
               allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
               allowFullScreen
             ></iframe>
+            {/* //fdfh */}
             {/* <video
               className="w-full h-full object-cover"
               controls
